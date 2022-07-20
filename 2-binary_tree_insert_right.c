@@ -1,6 +1,6 @@
 #include "binary_trees.h"
 /**
- *binary_tree_insert_right- ....
+ *binary_tree_insert_right - ....
  *@parent: ....
  *@value: .....
  *Return: ......
@@ -16,7 +16,7 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 
 	right_n->n = value;
 	if (parent->right != NULL)
-	{	
+	{
 		parent->right->parent = right_n;
 		right_n->right = parent->right;
 	}
